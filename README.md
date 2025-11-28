@@ -102,7 +102,7 @@ LLM-Analysis-TDS-Project-2/
 
 ```bash
 git clone https://github.com/Samsul-Habib/TDS-project-2.git
-cd TDS-Project-2
+cd TDS-project-2
 ```
 
 ### Step 2: Install Dependencies
