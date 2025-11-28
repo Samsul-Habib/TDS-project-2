@@ -111,8 +111,8 @@ LLM-Analysis-TDS-Project-2/
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/saivijayragav/LLM-Analysis-TDS-Project-2.git
-cd LLM-Analysis-TDS-Project-2
+git clone https://github.com/Samsul-Habib/TDS-project-2.git
+cd TDS-Project-2
 ```
 
 ### Step 2: Install Dependencies
