@@ -264,34 +264,6 @@ The agent has access to the following tools:
 - Uses `pip install` for package resolution
 - Enables the agent to adapt to different task requirements
 
-## 🐳 Docker Deployment
-
-### Build the Image
-
-```bash
-docker build -t llm-analysis-agent .
-```
-
-### Run the Container
-
-```bash
-docker run -p 7860:7860 \
-  -e EMAIL="your.email@example.com" \
-  -e SECRET="your_secret_string" \
-  -e GOOGLE_API_KEY="your_api_key" \
-  llm-analysis-agent
-```
-
-### Deploy to HuggingFace Spaces
-
-1. Create a new Space with Docker SDK
-2. Push this repository to your Space
-3. Add secrets in Space settings:
-   - `EMAIL`
-   - `SECRET`
-   - `GOOGLE_API_KEY`
-4. The Space will automatically build and deploy
-
 ## 🧠 How It Works
 
 ### 1. Request Reception
