@@ -26,7 +26,7 @@ An intelligent, autonomous agent built with LangGraph and LangChain that solves 
 - [Configuration](#configuration)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-- [Tools &amp; Capabilities](#tools--capabilities)
+- [Tools & Capabilities](#tools--capabilities)
 - [Docker Deployment](#docker-deployment)
 - [How It Works](#how-it-works)
 - [License](#license)
@@ -111,6 +111,62 @@ LLM-Analysis-TDS-Project-2/
 ### Step 1: Clone the Repository
 
 ```bash
+git clone https://github.com/saivijayragav/LLM-Analysis-TDS-Project-2.git
+cd LLM-Analysis-TDS-Project-2
+```
+
+### Step 2: Install Dependencies
+
+1. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   # Windows
+   .\venv\Scripts\activate
+   # macOS/Linux
+   source venv/bin/activate
+   ```
+
+2. Install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Install Playwright browsers:
+   ```bash
+   playwright install chromium
+   ```
+
+## ⚙️ Configuration
+
+### Environment Variables
+
+Create a `.env` file in the project root:
+
+```env
+# Your credentials from the Google Form submission
+EMAIL=your.email@example.com
+SECRET=your_secret_string
+
+# Google Gemini API Key
+GOOGLE_API_KEY=your_gemini_api_key_here
+```
+
+### Getting a Gemini API Key
+
+1. Visit [Google AI Studio](https://aistudio.google.com/app/apikey)
+2. Create a new API key
+3. Copy it to your `.env` file
+
+## 🚀 Usage
+
+### Local Development
+
+Start the FastAPI server:
+
+```bash
+python main.py
+```
+
 The server will start on `http://0.0.0.0:7860`
 
 ### Testing the Endpoint
@@ -305,11 +361,3 @@ The agent follows this loop:
 ## 📄 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-**Author**: Sai Vijay Ragav 
-**Course**: Tools in Data Science (TDS)
-**Institution**: IIT Madras
-
-For questions or issues, please open an issue on the [GitHub repository](https://github.com/saivijayragav/LLM-Analysis-TDS-Project-2).
